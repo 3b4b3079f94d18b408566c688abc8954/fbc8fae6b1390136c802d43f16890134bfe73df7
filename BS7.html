@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
+    ></script>
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      #home {
+        width: 100%;
+        height: 100vh;
+      }
+
+      #home img {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .navbar-brand {
+        padding: 3px;
+        border: 2px solid white;
+      }
+
+      nav {
+        background: black;
+        opacity: 0.7;
+      }
+
+      #specialties {
+        background: url("https://wallpaperaccess.com/full/1321696.jpg") fixed
+          center center;
+        background-size: cover;
+        padding: 90px;
+      }
+
+      #store img {
+        width: 100%;
+      }
+
+      #photos img {
+        width: 100%;
+        height: 190px;
+      }
+
+      #photos h3 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      #photos p {
+        font-size: 18px;
+      }
+
+      #photos .price {
+        color: orange;
+      }
+
+      #menu {
+        background: url("https://i2-prod.mirror.co.uk/incoming/article20636396.ece/ALTERNATES/s1200/0_Nandos.jpg")
+          fixed center center;
+        padding: 90px;
+        background-size: cover;
+      }
+
+      #rate img {
+        /* width: 100%; */
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+      }
+
+      #rate h3 {
+        font-size: 16px;
+        font-weight: bold;
+        word-spacing: 6px;
+      }
+
+      #rate p {
+        font-size: 14px;
+      }
+
+      #rate .price {
+        padding-top: 12px;
+        color: orange;
+      }
+
+      #reservation {
+        background: url("https://wallpapercave.com/wp/wp1874165.jpg") fixed
+          center center;
+        background-size: cover;
+        padding: 80px;
+      }
+
+      #details label {
+        font-weight: bold;
+        font-size: 13px;
+      }
+
+      #details ::placeholder {
+        color: gray;
+        font-size: 15px;
+      }
+
+      #details button {
+        width: 100%;
+        border-radius: 20px;
+        background-color: orange;
+      }
+
+      #events {
+        background: url("https://thebarnexpress.com/wp-content/uploads/2016/10/slide-1.jpg")
+          fixed center center;
+        background-size: cover;
+        padding: 80px;
+      }
+
+      #food-card img {
+        width: 100%;
+        height: 250px;
+      }
+
+      #food-card a {
+        color: black;
+        border-bottom: 2px solid black;
+      }
+
+      #contact label {
+        font-weight: bold;
+        font-size: 13px;
+      }
+
+      #contact textarea {
+        height: 150px;
+      }
+
+      #contact button {
+        border-radius: 20px;
+      }
+
+      #footer {
+        background-color: black;
+      }
+
+      #footer p,
+      #footer a {
+        font-size: 11px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <a class="navbar-brand" href="BS7.html">RESTRO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="BS7.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#specialties">Specialties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reservation">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home">
+      <!--Carousel Wrapper-->
+      <div
+        id="carousel-example-2"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+      >
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carousel-example-2"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carousel-example-2" data-slide-to="1"></li>
+          <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="view">
+              <img
+                class="d-block w-100"
+                src="https://d39l2hkdp2esp1.cloudfront.net/img/photo/109757/109757_00_2x.jpg"
+                alt="First slide"
+              />
+
+              <div class="mask rgba-black-strong"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive primary-heading">Welcome</h3>
+              <p>Resto world</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img
+                class="d-block w-100"
+                src="https://img.freepik.com/free-psd/top-view-fast-food-black-background-mock-up_23-2148321326.jpg?size=626&ext=jpg"
+                alt="Second slide"
+              />
+
+              <div class="mask rgba-black-strong"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive primary-heading">Welcome</h3>
+              <p>Resto world</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img
+                class="d-block w-100"
+                src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8&w=1000&q=80"
+                alt="Third slide"
+              />
+
+              <div class="mask rgba-black-strong"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive primary-heading">Welcome</h3>
+              <p>Resto world</p>
+            </div>
+          </div>
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a
+          class="carousel-control-prev"
+          href="#carousel-example-2"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carousel-example-2"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
+      <!--/.Carousel Wrapper-->
+    </section>
+
+    <section id="store" class="bg-white mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 text-center fadeIn">
+            <div class="heading dark">
+              <h1 class="primary-heading display-4 text-warning">Discover</h1>
+              <h3 class="">Our Store</h3>
+              <span class="sep">* * *</span>
+            </div>
+            <p>
+              Voluptatibus quaerat laboriosam fugit non Ut consequatur animi est
+              molestiae enim a voluptate totam natus modi debitis dicta impedit
+              voluptatum quod sapiente illo saepe explicabo quisquam perferendis
+              labore et illum suscipit
+            </p>
+            <p>
+              <a
+                href="#"
+                class="custom-link text-dark font-weight-bold border-bottom border-dark"
+                >About Us</a
+              >
+            </p>
+          </div>
+          <div class="col-md-6 col-md-push-1 animate__animated">
+            <img
+              class="img-fluid"
+              src="https://cdn1.photostockeditor.com/c/2311/people-eating-inside-of-cafeteria-during-daytime-person-people.jpg"
+              class="img img-responsive"
+              style="max-width: 100%; max-height: 400px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="specialties">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center fadeInUp">
+            <div style="margin-top: 250px">
+              <h2 class="display-4 text-warning primary-heading text-center">
+                Discover
+              </h2>
+              <h3 class="text-white font-weight-bold text-center">
+                Our Specialties
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="photos">
+      <div class="container">
+        <div class="row pt-3 text-center">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img
+              src="https://i2-prod.manchestereveningnews.co.uk/incoming/article17872387.ece/ALTERNATES/s1200b/0_EN_050320_Nandos_is_hiring_staff_Walkden_restaurant_17872329.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>Baked Potato Pizza</h3>
+            <p class="pt-3">
+              Laboriosam pariatur modi praesentium deleniti molestiae officiis
+              atque numquam.
+            </p>
+            <p class="price">$20.99</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img
+              src="https://i2-prod.mirror.co.uk/incoming/article21977251.ece/ALTERNATES/s1200c/0_NANDOS-CHICKEN.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>Salted Fried Chicken</h3>
+            <p class="pt-3">
+              Laboriosam pariatur modi praesentium deleniti molestiae officiis
+              atque numquam.
+            </p>
+            <p class="price">$19.99</p>
+          </div>
+        </div>
+        <div class="row pt-3 text-center">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>Imported Salmon Steak</h3>
+            <p class="pt-3">
+              Laboriosam pariatur modi praesentium deleniti molestiae officiis
+              atque numquam.
+            </p>
+            <p class="price">$20.99</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img
+              src="https://i2-prod.mylondon.news/incoming/article17484520.ece/ALTERNATES/s1200c/1_NANDOS-CHICKEN.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>Roast Beef (4 sticks)</h3>
+            <p class="pt-3">
+              Laboriosam pariatur modi praesentium deleniti molestiae officiis
+              atque numquam.
+            </p>
+            <p class="price">$32.99</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img
+              src="https://www.mermaidquay.co.uk/website/wp-content/uploads/2019/11/Nandos-Gravy.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row pt-3 pb-3 text-center">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img
+              src="https://d1ralsognjng37.cloudfront.net/b77d6142-ef17-4cba-ae45-d365024b4eff.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>Tuna Roast Source</h3>
+            <p class="pt-3">
+              Laboriosam pariatur modi praesentium deleniti molestiae officiis
+              atque numquam.
+            </p>
+            <p class="price">$25.99</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img
+              src="https://cdn.concreteplayground.com/content/uploads/2018/08/Vecino-supplied7-1920x1080.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>Fried Potatoes with Garlic</h3>
+            <p class="pt-3">
+              Laboriosam pariatur modi praesentium deleniti molestiae officiis
+              atque numquam.
+            </p>
+            <p class="price">$32.99</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="container text-center">
+        <div class="row text-center">
+          <div class="col-md-12 text-center">
+            <div style="margin-top: 250px">
+              <h2 class="display-4 text-warning text">Discover</h2>
+              <h3 class="text-white font-weight-bold">Our Menu</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rate">
+      <div class="container">
+        <div class="row pt-5">
+          <div
+            class="col-lg-1 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/0a/b6/6b/b4/nando-s-spicy-chicken.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-4 text-center">
+            <h3 class="pt-3">Fried Potatoes with Garlic</h3>
+            <p>Crab / Potatoes / Rice</p>
+          </div>
+          <div class="col-lg-1 text-center">
+            <p class="price">$22.99</p>
+          </div>
+
+          <div
+            class="col-lg-1 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/styles/teaser_400x235_/public/2020-10/dining-out.jpg?itok=xTU_Udv- "
+              alt=" "
+            />
+          </div>
+          <div class="col-lg-4 text-center">
+            <h3 class="pt-3">Tuna Roast Source</h3>
+            <p>Crab / Potatoes / Rice</p>
+          </div>
+          <div class="col-lg-1 text-center">
+            <p class="price">$22.99</p>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-lg-1 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/15/9e/05/d1/grilled-prawn.jpg "
+              alt=" "
+            />
+          </div>
+          <div class="col-lg-4 text-center">
+            <h3 class="pt-3">Roast Beef (4 sticks)</h3>
+            <p>Crab / Potatoes / Rice</p>
+          </div>
+          <div class="col-lg-1 text-center">
+            <p class="price">$22.99</p>
+          </div>
+          <div
+            class="col-lg-1 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="https://bloximages.chicago2.vip.townnews.com/dailyjournalonline.com/content/tncms/assets/v3/editorial/3/73/37364450-5ebc-5ad0-8919-4b2d8951c57f/5f0f33f798847.image.jpg?resize=1200%2C1152 "
+              alt=" "
+            />
+          </div>
+          <div class="col-lg-4 text-center">
+            <h3 class="pt-3">Salted Fried Chicken</h3>
+            <p>Crab / Potatoes / Rice</p>
+          </div>
+          <div class="col-lg-1 text-center">
+            <p class="price">$22.99</p>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-lg-1 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="https://www.americascuisine.com/mobile_App/gallery/4304/app_pic1.jpg "
+              alt=" "
+            />
+          </div>
+          <div class="col-lg-4 text-center">
+            <h3 class="pt-3">Baked Potato Pizza</h3>
+            <p>Crab / Potatoes / Rice</p>
+          </div>
+          <div class="col-lg-1 text-center">
+            <span class="price">$22.99</span>
+          </div>
+          <div
+            class="col-lg-1 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="https://images.otstatic.com/prod/25740775/1/large.jpg "
+              alt=" "
+            />
+          </div>
+          <div class="col-lg-4 text-center">
+            <h3 class="pt-3">Fried Potatoes with Garlic</h3>
+            <p>Crab / Potatoes / Rice</p>
+          </div>
+          <div class="col-lg-1 text-center">
+            <p class="price">$22.99</p>
+          </div>
+        </div>
+        <div class="row pb-4">
+          <div
+            class="col-lg-1 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="https://cdn.vox-cdn.com/thumbor/9ofDRofDt2ErSssV9HGSz0mOz90=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/10675457/Boil_Seafood_House_6273.jpg "
+              alt=" "
+            />
+          </div>
+          <div class="col-lg-4 text-center">
+            <h3 class="pt-3">Salted Fried Chicken</h3>
+            <p>Crab / Potatoes / Rice</p>
+          </div>
+          <div class="col-lg-1 text-center">
+            <span class="price">$22.99</span>
+          </div>
+          <div
+            class="col-lg-1 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="https://resizer.otstatic.com/v2/photos/large/25740775.jpg "
+              alt=" "
+            />
+          </div>
+          <div class="col-lg-4 text-center">
+            <h3 class="pt-3">Tuna Roast Source</h3>
+            <p>Crab / Potatoes / Rice</p>
+          </div>
+          <div class="col-lg-1 text-center">
+            <p class="price">$22.99</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservation">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div style="margin-top: 250px">
+              <h2 class="display-4 text-center text-warning font-weight-light">
+                Booking
+              </h2>
+              <h3 class="text-white font-weight-bold">Reserve A Table</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="bg-white pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form method="post" class="form">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="people">How Many People</label>
+                    <div class="form-field">
+                      <i class="icon icon-chevron-down"></i>
+                      <select name="people" id="people" class="form-control">
+                        <option value="#">1 people</option>
+                        <option value="#">2 people</option>
+                        <option value="#">3 people</option>
+                        <option value="#">4+ people</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="date">Date</label>
+                    <div class="form-field">
+                      <i class=""></i>
+                      <input type="date" id="date" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="time">Time</label>
+                    <div class="form-field">
+                      <i class="icon icon-clock"></i>
+                      <input type="time" id="time" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <div class="form-field">
+                      <i class="glyphicon glyphicon-user"></i>
+                      <input
+                        type="text"
+                        id="name"
+                        class="form-control"
+                        placeholder="Your full name"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="form-field">
+                      <i class="icon icon-mail"></i>
+                      <input
+                        type="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Your email address"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <div class="form-field">
+                      <i class="icon icon-phone"></i>
+                      <input
+                        type="text"
+                        id="phone"
+                        class="form-control"
+                        placeholder="Your phone"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4 pt-4 col-md-12 col-sm-12">
+                  <button
+                    type="button"
+                    class="btn justify-content-center align-items-center d-flex"
+                  >
+                    SUBMIT
+                  </button>
+                </div>
+                <div class="col-lg-4"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="mt-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div style="margin-top: 250px">
+              <h2 class="display-4 text-center text-warning font-weight-light">
+                Discover
+              </h2>
+              <h3 class="text-white font-weight-bold text-center">
+                Our Events
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light pt-4 pb-4" id="food-card">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- Card -->
+            <div class="card">
+              <!-- Card image -->
+              <img
+                class="card-img-top"
+                src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="Card image cap"
+              />
+
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <h4 class="card-title">Card title</h4>
+                <!-- Text -->
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+                  nemo laudantium impedit sunt explicabo sapiente modi quidem
+                  reprehenderit quam fugit architecto voluptate, incidunt
+                  cumque? Nam sint provident sunt totam officiis.
+                </p>
+                <!-- Button -->
+                <a href="#" class="">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="col-md-4">
+            <!-- Card -->
+            <div class="card">
+              <!-- Card image -->
+              <img
+                class="card-img-top"
+                src="https://static.onecms.io/wp-content/uploads/sites/9/2016/05/HD-201501-r-tacos-with-aromatic-red-rice-brussels-sprout-slaw-and-creamy-tarragon-orange.jpg"
+                alt="Card image cap"
+              />
+
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <h4 class="card-title">Card title</h4>
+                <!-- Text -->
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatibus temporibus illum reiciendis quidem. Fugit
+                  consectetur dicta, labore distinctio accusamus maxime aut,
+                  culpa rem cumque nostrum explicabo est unde quia sit?
+                </p>
+                <!-- Button -->
+                <a href="#" class="">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="col-md-4">
+            <!-- Card -->
+            <div class="card">
+              <!-- Card image -->
+              <img
+                class="card-img-top"
+                src="https://tripnxt.com/blog/wp-content/uploads/2020/02/TripNxt-Indian-Food-448x486.jpg"
+                alt="Card image cap"
+              />
+
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <h4 class="card-title">Card title</h4>
+                <!-- Text -->
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatibus temporibus illum reiciendis quidem. Fugit
+                  consectetur dicta, labore distinctio accusamus maxime aut,
+                  culpa rem cumque nostrum explicabo est unde quia sit?
+                </p>
+                <!-- Button -->
+                <a href="#" class="">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white pt-5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 text-center">
+            <div class="dark">
+              <h1 class="display-4 text-warning">Contact</h1>
+              <h3 class="text-dark font-weight-bold text-uppercase">
+                Let's Chat
+              </h3>
+            </div>
+            <p class="pt-4">
+              Voluptatibus quaerat laboriosam fugit non Ut consequatur animi est
+              molestiae enim a voluptate totam natus modi debitis dicta impedit
+              voluptatum quod sapiente illo saepe explicabo quisquam perferendis
+              labore et illum suscipit
+            </p>
+          </div>
+          <div class="col-md-6 col-md-push-1">
+            <form method="post" class="form">
+              <div class="form-group">
+                <label for="c_name">Your Name</label>
+                <div class="form-field">
+                  <input type="text" id="c_name" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="c_email">Your Email</label>
+                <div class="form-field">
+                  <input type="text" id="c_email" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="c_message">Your Message</label>
+                <div class="form-field">
+                  <textarea
+                    name="c_message"
+                    id="c_message"
+                    cols="10"
+                    rows="10"
+                    class="form-control"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-warning">
+                  SEND MESSAGE
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-4 text-white" id="footer">
+      <div class="">
+        <div class="footer">
+          <div class="container pt-4">
+            <div class="row">
+              <div class="col-md-3">
+                <h6>Locations</h6>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>
+                      198 West 21th Street, Suite 721 <br />
+                      New York NY 10016
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <p>
+                      198 West 21th Street, Suite 721 <br />
+                      New York NY 10016
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="headline">
+                  <h6>Resources</h6>
+                </div>
+                <ul class="list-unstyled link-list">
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <div class="headline">
+                  <h6>Support</h6>
+                </div>
+                <address>
+                  <ul class="list-unstyled link-list">
+                    <li><a href="#">Contact Us</a></li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-envelope text-light"></i>
+                        support@company.com</a
+                      >
+                    </li>
+                    <div class="col-md-4">
+                      <ul class="d-print-inline-flex">
+                        <a href="#"
+                          ><i class="fab fa-twitter text-light"></i
+                        ></a>
+                        &nbsp;
+                        <a href="#"
+                          ><i class="fab fa-facebook-f text-light"></i></a
+                        ><br />
+                        <a href="#"
+                          ><i class="fab fa-google-plus-g text-light"></i></a
+                        >&nbsp;
+                        <a href="#"
+                          ><i class="fab fa-instagram text-light"></i
+                        ></a>
+                      </ul>
+                    </div>
+                  </ul>
+                </address>
+              </div>
+              <div class="col-md-3">
+                <div class="headline">
+                  <h6>Company</h6>
+                </div>
+                <ul class="list-unstyled link-list">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Cancellation/Rescheduling policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
